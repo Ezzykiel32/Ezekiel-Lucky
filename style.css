@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.section {
+    width: 100%;
+    padding: 2rem;
+    margin-top: 4em;
+}
+nav{
+    position: fixed;
+    top: 0;
+    padding: 1em 2em;
+    width: 100%;
+    background-color: white;
+}
+
+nav div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav div h1{
+    color: midnightblue;
+}
+
+nav div svg{
+    width: 2.4em;
+}
+
+.desktop-navigations {
+    display: none;
+}
+
+.desktop-navigations li {
+    text-decoration: none;
+    list-style: none;
+}
+.desktop-navigations li a {
+    text-decoration: none;
+}
+
+.hide{
+    display: none;
+}
+
+.mobile-navigations {
+    margin-top: 1em;
+}
+
+.mobile-navigations li a{
+    text-decoration: none;
+}
+
+.mobile-navigations li{
+    list-style: none;
+    margin-bottom: .7em;
+}
+
+.hero {
+    display: flex;
+    width: 100%;
+    flex-direction: column-reverse;
+    gap: 1em;
+    margin-top: 2em;
+}
+
+.hero p {
+    font-size: 25px;
+    text-align: center;
+    line-height: 1.5em;
+}
+
+.name {
+    color: midnightblue;
+    font-weight: 700;
+}
+
+.img-contsiner {
+    width: 100%;
+}
+
+.myimg {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.section-title {
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 1em;
+    color: midnightblue;
+
+}
+.text{
+    font-size: 18px;
+    line-height: 1.7em;
+}
+.gallery{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.gallery img{
+    width: 100%;
+}
+
+.social-div{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-div a svg{
+    width: 100px;
+}
+
+footer p{
+    padding-bottom: 2em;
+    text-align: center;
+}
+
+@media screen and (min-width: 750px) {
+    .section{
+        padding: 0 6em;
+    }
+    .hero {
+        flex-direction: row;
+        align-items: center;
+        gap: 5em;
+
+    }
+
+    .hero p {
+        text-align: left;
+    }
+
+    .desktop-navigations {
+        display: flex;
+        gap: 2em;
+    }
+
+    nav div svg{
+        display: none;
+    }
+    .gallery{
+        flex-direction: row;
+    }
+    .gallery img{
+        width: 200px;
+    }
+}
